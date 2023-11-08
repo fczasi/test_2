@@ -2,21 +2,29 @@
 using namespace std;
 int i,w,j,k;
 int t;
-void printw(int);
-void printk(int);
+void printplanszaw(int);
+void printplanszak(int);
 int main()
 {
+    int wiersze;
+    int kolumny;
     cout << "podaj ilosc wierszy\n";
-    cin >> w;
+    cin >> wiersze;
     cout << "podaj ilosc kolumn\n";
-    cin >> k;
-    for (i = 0; i < w; i++) {
-        cout << "* ";
-    }
-        for (j = 0; j < k; j++) {
-            cout << ". ";
+    cin >> kolumny;
+    printplanszaw(wiersze);
+    printplanszak(kolumny);
 
+    void printplanszaw(int w); {
+        for (i = 0; i < w / 2; i++) {
+            cout << "* ";
         }
+    }
+    void printplanszak(int k); {
+        for (j = 0; j < k / 2; j++) {
+            cout << ". ";
+        }
+    }
 }
 
 
