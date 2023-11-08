@@ -1,20 +1,22 @@
 ﻿#include <iostream>
 using namespace std;
 int i,w,j,k;
+int t;
+void printw(int);
+void printk(int);
 int main()
 {
-    cout << "podaj ilość wierszy\n";
+    cout << "podaj ilosc wierszy\n";
     cin >> w;
-
+    cout << "podaj ilosc kolumn\n";
+    cin >> k;
     for (i = 0; i < w; i++) {
         cout << "* ";
     }
-    cout << "podaj ilość kolumn\n";
-    cin >> k;
         for (j = 0; j < k; j++) {
             cout << ". ";
 
-    }
+        }
 }
 
 
@@ -34,8 +36,10 @@ int main()
 
 
 
-/*
-#include <iostream>
+
+
+
+/*#include <iostream>
 
 using namespace std;
 
@@ -73,5 +77,4 @@ void drukujLinie2(int z)
         cout << ".";
     }
     cout << endl;
-}
-*/
+}*/
